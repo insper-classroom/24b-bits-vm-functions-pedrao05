@@ -1,2 +1,23 @@
 // implemente a funcao mult que recebe dois argumentos
 // e retorna a multiplicacao
+
+function mult 1
+push constant 0
+pop local 0
+label LOOP_START
+push argument 1
+push constant 0
+eq
+if-goto LOOP_END
+push local 0
+push argument 0
+add
+pop local 0
+push argument 1
+push constant 1
+sub
+pop argument 1
+goto LOOP_START
+label LOOP_END
+push local 0
+return

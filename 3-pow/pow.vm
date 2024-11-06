@@ -1,0 +1,20 @@
+function pow 1
+push constant 1
+pop local 0
+label LOOP_START
+push argument 1
+push constant 0
+eq
+if-goto LOOP_END
+push local 0
+push argument 0
+call mult 2
+pop local 0
+push argument 1
+push constant 1
+sub
+pop argument 1
+goto LOOP_START
+label LOOP_END
+push local 0
+return
